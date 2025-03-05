@@ -7,7 +7,7 @@ Pvz.:
   "a"       --> 1
 -------------------------------------------------------------------------- */
 
-function textToNumbers(input: string){
+function textToNumbers(input: string):number{
   let numResult = "";
 
   for(let i = 0; i < input.length; i++){
@@ -17,10 +17,8 @@ function textToNumbers(input: string){
       numResult += '0';
     }
   }
-  return numResult
+  return parseInt(numResult, 2)
 }
 
 console.log(textToNumbers("kebabas"))
 
-
-// the number is returned as string, it could be returned as a number number by adding parseInt to the result and adding :number after the function input to specify that the function returns a number.
