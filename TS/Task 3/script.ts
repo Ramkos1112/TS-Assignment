@@ -13,17 +13,21 @@ type TipasNaudoti = {
   kilometrazas: number
 };
 
-const dviratis = {
+type Bycicle = Pick<TipasNaudoti, "metai" | "spalva">
+type NewCar = Omit<TipasNaudoti, "kilometrazas">
+type OldCar = TipasNaudoti & {surudyjesDugnas: boolean}
+
+const dviratis: Bycicle = {
   metai: 1999,
   spalva: ''
 };
-const naujaMasina = {
+const naujaMasina: NewCar = {
   marke: '',
   modelis: '',
   metai: 2025,
   spalva: ''
 };
-const senaMasina = {
+const senaMasina: OldCar = {
   marke: '',
   modelis: '',
   metai: 2025,
