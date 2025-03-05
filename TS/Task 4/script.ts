@@ -6,3 +6,21 @@ Pvz.:
   "kebabas" --> 1010101
   "a"       --> 1
 -------------------------------------------------------------------------- */
+
+function textToNumbers(input: string){
+  let numResult = "";
+
+  for(let i = 0; i < input.length; i++){
+    if (i % 2 === 0) {
+      numResult += '1';
+    } else {
+      numResult += '0';
+    }
+  }
+  return numResult
+}
+
+console.log(textToNumbers("kebabas"))
+
+
+// the number is returned as string, it could be returned as a number number by adding parseInt to the result and adding :number after the function input to specify that the function returns a number.
