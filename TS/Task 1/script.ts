@@ -34,3 +34,5 @@ let eight: numberAndStringArray = ['hi', 1];
 eight = ['bye', 2];
 // eight = [1,2]; // error
 // eight = ['a','b','c']; // error
+
+//I'm feeling rather unwell so i will probably not get too much done this time, sorry!
